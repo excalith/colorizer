@@ -1,0 +1,168 @@
+/* RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* DESIGN */
+body {
+    background-color: #21252b;
+    color: #93979e;
+    font-family: 'Fira Mono', monospace;
+    padding-top: 80px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 34px;
+    font-weight: bold;
+    margin-top:20px;
+    background: #ffd66b; /* Old browsers */
+    background: -moz-linear-gradient(left, #ffd66b 0%, #ff4596 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #ffd66b 0%,#ff4596 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #ffd66b 0%,#ff4596 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd66b', endColorstr='#ff4596',GradientType=1 ); /* IE6-9 */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p {
+    position: relative;
+    width: 100%;
+    margin:15px 0 35px 0;
+    font-size: 12px;
+    text-align: center;
+    color: #ff8800;
+}
+
+a, a:visited {
+    color: #4d78cc;
+    text-decoration: none;
+}
+
+header {
+    background-color: #2f333d;
+    position: fixed;
+    top:0px;
+    height: 50px;
+    width: 100%;
+}
+
+content {
+    display: table;
+    margin: 0 auto;
+}
+
+footer p{
+    position: fixed;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    margin: 0 auto;
+    color: #93979e;
+}
+
+.datagrid {
+    width: 400px;
+    height: 350px;
+    margin: 0 auto;
+    display: inline-block;
+}
+.datagrid table {
+    text-align: left;
+    width: 100%;
+}
+.datagrid {
+    overflow: hidden;
+}
+.datagrid table td, .datagrid table th {
+    padding: 10px 10px;
+    vertical-align: middle;
+}
+.datagrid table tbody td {
+    background: #343842;
+    border-left: 2px solid #21252b;
+}
+.datagrid table tbody .alt td {
+    background: #282c34;
+    border-left: 2px solid #21252b;
+}
+.datagrid table tbody td:first-child {
+    border-left: none;
+}
+.datagrid table tbody tr:last-child td {
+    border-bottom: none;
+}
+.data-title {
+    font-family: 'Fira Mono', monospace;
+    width: 100px;
+}
+.data-input {
+    background-color: transparent !important;
+}
+#color-preview {
+    width:15px;
+    height: 15px;
+    border:2px solid #21252b;
+}
+#color-input-table {
+    margin-bottom: 25px;
+}
+#color-input {
+    width:100%;
+    border-bottom:4px solid #282c34;
+    padding-bottom: 5px;
+}
+#color-input input{
+    width:100%;
+    background-color: #21252b;
+    color: #93979e;
+    border: none;
+    text-align: center;
+    font-family: 'Fira Mono', monospace;
+}
+#format-output {
+    font-size: 12px;
+}
