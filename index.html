@@ -20,7 +20,6 @@
             $("#float-output").text(tiny.toFloatString());
             $("#hsl-output").text(tiny.toHslString());
             $("#hsv-output").text(tiny.toHsvString());
-            $("#format-output").text("(" + tiny.getFormat() + ")");
 
             $("#color-input").css("border-color",
                 tiny.toHexString()
@@ -35,11 +34,6 @@
                 r: 0,
                 g: 0,
                 b: 0
-            });
-
-            $("#inputter a").click(function () {
-                $("#color").val($(this).text()).trigger("change");
-                return false;
             });
         });
     </script>
@@ -103,13 +97,6 @@
         </div>
 
     </content>
-
-    <footer>
-        <p>
-            Maintained by
-            <a href='http://www.cancellek.com'>Can Cellek</a>
-        </p>
-    </footer>
 
 </body>
 
